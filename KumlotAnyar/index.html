@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-wight, initial-scale=1.0">
+        <title>Ayam Geprek Kumlot UMS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/LogoKumlot.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Menu</a></li>
+                        <li><a href="">Order</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Ayam Geprek Terlaris di Kartasura</h1>
+                <p>Ayam Geprek Kumlot adalah salah satu Ayam Geprek Favorit para mahasiswa dengan harga terjangkau</p>
+                <a href="" class="hero-btn">Pelajari Lebih Lanjut</a>
+            </div>
+        </section>
+    <!----Our Menu-->
+        <section class="ourMenu">
+            <h1>Menu yang kami hidangkan</h1>
+            <p>PIlih salah satu menu terbaik kami</p>
+        </section>
+
+    <!-----Javascrip for Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById ("navLinks");
+        function showMenu (){
+            navLinks.style.right = "0";
+        }
+        function hideMenu (){
+            navLinks.style.right = "-200px"
+        }
+    </script>        
+    </body>
+</html>
